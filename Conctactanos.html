@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Trabajo</title>
+    <link rel="stylesheet" href="./Conctactanos.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-img">   
+        </div>
+        <nav>
+            <ul>
+                <li><img src="./Logo_Apple.inc.gif" alt=""></li>
+                <li><a href="./Quienessomos.html">¿Quienes Somos?</a></li>
+                <li><a href="./Historia.html">Historia</a></li>
+                <li><a href="./Catalogo de Telefonos.html">Catalogo de Telefonos</a></li>
+                <li><a href="./Sucursales.html">Sucursales</a></li>
+                <li><a href="./Conctactanos.html">Coctactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       
+        <section class="form">
+            <form name="registro">
+            <div class="main-tiitle">
+                <h2>Solicitud de Existencia de Iphones</h2>
+            </div>
+            <section class="section-name">
+                <h2>Nombre</h2>
+                <input type="text" id="nombre" class="input-name">
+            </section>
+            <section class="section-estadocivil">
+                <fieldset>
+                    <legend>Estado Civil</legend>
+                <div class="main-estadocivil">
+                    <div class="div-estado">
+                        <label>Soltero(a)</label>
+                    <input type="radio" name="radio" id="radio1">
+                    </div>
+                    <div class="div-estado">
+                        <label>Casado(a)</label>
+                        <input type="radio" name="radio" id="radio2" >
+                    </div class="div-estado">
+                    <div>
+                        <label>Otro</label>
+                    <input type="radio" name="radio" id="radio3">
+                    </div>
+                </div>
+                </fieldset>
+            </section>
+            <section class="section-habilidadestec">
+                <fieldset>
+                    <legend>Iphones en Existencia</legend>
+                    <div class="main-habilidadestec">
+                        <div class="div-habilidades">
+                            <label>Iphone 12</label>
+                            <input type="checkbox" id="check1" value="Iphone 12"> 
+                        </div>
+                        <div class="div-habilidades">
+                            <label>Iphone 13</label>
+                            <input type="checkbox" id="check2" value="Iphone 13">
+                        </div>
+                        <div class="div-habilidades" >
+                            <label>Iphone13 Pro Max</label>
+                            <input type="checkbox" id="check3" value="Iphone13 Pro Max">
+                        </div>
+                        <div class="div-habilidades">
+                            <label>Iphone 14</label>
+                            <input type="checkbox" id="check4" value="Iphone 14">
+                        </div>
+                        <div class="div-habilidades" >
+                            <label>Iphone14 Pro Max</label>
+                            <input type="checkbox" id="check5" value="Iphone14 Pro Max">
+                        </div>
+                        <div class="div-habilidades">
+                            <label>Iphone 15</label>
+                            <input type="checkbox" id="check6" value="Iphone 1">
+                        </div>
+                        <div class="div-habilidades">
+                            <label>Iphone14 Pro Max</label>
+                            <input type="checkbox" id="check7" value="Iphone15 Pro Max">
+                        </div>
+                    </div>
+                </fieldset>
+            </section>
+            <section class="section-sucursal">
+                <fieldset>
+                    <legend>Escoja la sucursal mas cercana a su localidad</legend>
+                    <div class="main-sucursal">
+                        <select name="sucursal" id="sucursal">
+                            <option id="Escobedo" value="Escobedo" selected>Escobedo</option>
+                            <option id="Monterrey" value="Monterrey">Monterrey</option>
+                            <option id="Guadalupe" value="Guadalupe">Guadalupe</option>
+                            <option id="Juarez" value="Juarez">Juarez</option>
+                            <option id="Santa-Catarina" value="Santa-Catarina">Santa-Catarina</option>
+                            <option id="Apodaca" value="Apodaca">Apodaca</option>
+                            <option id="San Nicolas" value="San Nicolas">San Nicolas</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </section>
+            <section class="section-button">
+                <button value="enviar" id="bt" onclick="obtenerdatos()" type="button">Enviar</button>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <section class="section-tiitle-datos">
+                <h2>Datos Guardados</h2>
+            </section>
+            <table>
+                <tr>
+                    <td class="td-name">Nombre</td>
+                    <td><input type="text" name="nombreobtenido" id="nombreobtenido"></td>
+                </tr>
+                <tr>
+                    <td class="td-name">Estado Civil</td>
+                    <td><input type="text" name="estadoeivilobtenido" id="estadoeivilobtenido"></td>
+                </tr>
+                <tr>
+                    <td class="td-name">Iphones en existencia</td>
+                    <td><input type="text" name="habilidadesobtenido" id="habilidadesobtenido"></td>
+                </tr>
+                <tr>
+                    <td class="td-name">Sucursal Preferida</td>
+                    <td><input type="text" name="tusucursal" id="tusucursal"></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+   
+    </main>
+    <p>Daniel Alejandro Garcia Echeverria 2163681</p>
+    <script src="./Conctactanos.js"></script>
+</body>
+</html>
